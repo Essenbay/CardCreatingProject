@@ -63,6 +63,11 @@ public class CreditAccount extends Account{
         return result;
     }
 
+    @Override
+    public int hashCode(){
+        return super.hashCode();
+    }
+
     public int getInterestRate() {
         return interestRate;
     }

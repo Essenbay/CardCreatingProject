@@ -18,13 +18,9 @@ public class Test {
         SavingAccount savingAccount2 = new SavingAccount((Long) 2L, 0, new Date(2003,3,20),
                 "Rustembek", "Assima", "address", "8727",20, new Date(2004,3,20));
 
-        List<Account> accounts = new ArrayList<>();
-        accounts.add(debitAccount2);
-        accounts.add(creditAccount2);
-        accounts.add(savingAccount2);
-        System.out.println(accounts);
-        Collections.sort(accounts);
-        System.out.println(accounts);
+        System.out.println(debitAccount2.hashCode());
+        System.out.println(savingAccount2.hashCode());
+        System.out.println(creditAccount2.hashCode());
 
     }
 }

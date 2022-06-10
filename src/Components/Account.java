@@ -133,6 +133,13 @@ public abstract class Account implements Comparable<Account>{
         return false;
     }
     @Override
+    public int hashCode(){
+        int hash = 7;
+        hash = 31 * hash + Math.toIntExact(id);
+        return hash;
+
+    }
+    @Override
     public String toString() {
         return " Account{" + "id=" + id + ", balance=" + balance + ", dateOfCreation=" + dateOfCreation +
                 ", firstname='" + firstname + ", lastname='" + lastname + ", " +

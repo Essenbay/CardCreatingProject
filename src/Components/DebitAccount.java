@@ -47,6 +47,10 @@ public class DebitAccount extends Account{
             result = this.getFirstname().compareTo(account.getFirstname());
         return result;
     }
+    @Override
+    public int hashCode(){
+        return super.hashCode();
+    }
     public String toString() {
         return super.toString() +
                 " DebitAccount{" + "annualMaintenance=" + annualMaintenance + '}';
